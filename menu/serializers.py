@@ -1,7 +1,7 @@
 from rest_framework import serializers
-from.models import Restaurant,Hour
+from.models import Restaurant
 
 class ResSerializer(serializers.ModelSerializer):
     class Meta:
         model= Restaurant
-        field = '__all__'
+        fields = "__all__"
